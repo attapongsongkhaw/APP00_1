@@ -1,0 +1,11 @@
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/service/FunctionProcessTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/config/DataSorceConfig.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/service/ClientProcessTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/soap/ws/service/LMSProfileServiceImplTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/dao/UserDaoTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/dao/AccountDaoTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/dao/ClientDaoTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/soap/ws/service/CorporationManagementServiceTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/dao/CorporationDaoTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/soap/ws/service/UserManagementServiceTest.java
+/root/.jenkins/workspace/LMSMasterSetup_BUILD/src/test/java/com/kbank/lms/service/CorporationProcessTest.java

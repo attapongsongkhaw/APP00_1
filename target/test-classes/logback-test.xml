@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+<property name="DEV_HOME" value="c:/logs/LMS/unitTest" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.FileAppender">
+		<file>${DEV_HOME}/LMSMasterSetup.log</file>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+	<logger name="org.springframework" level="off" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<logger name="com.kbank.lms" level="all" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<logger name="jndi" level="off" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	 
+	<root level="error">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

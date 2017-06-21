@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="KBANK1554I01Definitions"
+	targetNamespace="http://eai.kasikornbank.com/EAIWS/KBANK1554I01/v1"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:s1="http://eai.kasikornbank.com/EAIWS/KBANK1554I01/v1"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+	
+	<wsdl:import namespace="http://eai.kasikornbank.com/EAIWS/KBANK1554I01/v1" location="KBANK1554I01_v1.xsd"/>
+	<wsdl:types/>
+	<wsdl:message name="doService">
+		<wsdl:part element="s1:doService" name="parameters"/>
+	</wsdl:message>
+	<wsdl:message name="doServiceResponse">
+		<wsdl:part element="s1:doServiceResponse" name="parameters"/>
+	</wsdl:message>
+
+	<wsdl:portType name="KBANK1554I01Soap">
+		<wsdl:operation name="doService" parameterOrder="parameters">
+			<wsdl:input message="s1:doService" />
+			<wsdl:output message="s1:doServiceResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="KBANK1554I01SoapBinding" type="s1:KBANK1554I01Soap">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="doService">
+			<soap:operation soapAction="" style="document" />
+			<wsdl:input>
+				<soap:body parts="parameters" use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="parameters" use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="KBANK1554I01">
+		<wsdl:port binding="s1:KBANK1554I01SoapBinding" name="KBANK1554I01SoapPort">
+			<soap:address location="http://10.198.50.56:19001/EAIWS/KBANK1554I01.jws" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>

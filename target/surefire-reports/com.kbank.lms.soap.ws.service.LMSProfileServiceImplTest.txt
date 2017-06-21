@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.kbank.lms.soap.ws.service.LMSProfileServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.148 sec - in com.kbank.lms.soap.ws.service.LMSProfileServiceImplTest

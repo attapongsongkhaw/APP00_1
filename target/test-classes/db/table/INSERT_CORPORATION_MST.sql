@@ -1,0 +1,4 @@
+INSERT INTO corporation_mst VALUES ('E', 'sss', '222222222222', null, null, null, null, null, null, null, null, 'Y', 'Y', null, 'N', '2017-04-24 18:11:42', 'maker', null, null, '2017-04-24 18:11:42', 'maker');
+INSERT INTO corporation_mst VALUES ('MTL101', 'Muang Thai Company', '123451234512', null, null, null, null, null, null, null, null, 'Y', 'Y', 'c', 'E', '2017-03-17 13:20:03', 'MAKER', '2017-04-05 16:37:06', null, '2017-04-05 12:58:58', 'maker');
+INSERT INTO corporation_mst VALUES ('SCGCORP', 'SCG Group Co.,Ltd.', '554001333333', null, null, null, null, null, null, null, null, 'Y', 'Y', null, 'E', '2017-03-01 16:21:00', 'MAKER', '2017-04-05 13:36:20', 'CHECKER', '2017-04-05 13:36:20', 'maker');
+INSERT INTO corporation_mst VALUES ('W', 'dd', '222222222222', null, null, null, null, null, null, null, null, 'Y', 'Y', null, 'N', '2017-04-26 13:25:52', 'maker', null, null, '2017-04-26 13:25:52', 'maker');

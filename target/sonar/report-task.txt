@@ -1,0 +1,5 @@
+projectKey=LMSMasterSetup:LMSMasterSetup
+serverUrl=http://172.30.137.152
+dashboardUrl=http://172.30.137.152/dashboard/index/LMSMasterSetup:LMSMasterSetup
+ceTaskId=AVyKmACD-epy-SL5OZxV
+ceTaskUrl=http://172.30.137.152/api/ce/task?id=AVyKmACD-epy-SL5OZxV

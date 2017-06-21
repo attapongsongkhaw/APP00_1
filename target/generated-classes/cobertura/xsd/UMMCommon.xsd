@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://umm.corp.kbank.com/schema/UMMCommon" xmlns:tns="http://umm.corp.kbank.com/schema/UMMCommon" elementFormDefault="qualified">
+  <xsd:complexType name="UMMRequestBase">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="clientRequestId" type="xsd:string">
+      </xsd:element>
+      <xsd:element  name="clientIPAddress" type="xsd:string">
+      </xsd:element>
+      <xsd:element  name="sourceId" type="xsd:string">
+      </xsd:element>
+      <xsd:element name="requestDate" type="tns:DateTime">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="UMMResponseBase">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="id" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="serverId" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="success" type="xsd:boolean">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="code" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="message" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="responseDate" type="tns:DateTime">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Contactpoints">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="contactpoint" type="tns:Contactpoint" maxOccurs="unbounded">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Contactpoint">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="contactpoint_id" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_address_id" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_name" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_default" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_department" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_phone" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_mobile" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_fax" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="contactpoint_email" type="xsd:string">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Services">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="service" type="tns:Service" maxOccurs="unbounded">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Service">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="service_id" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="service_code" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="service_name" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="service_status" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="service_startdate" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="service_enddate" type="xsd:string">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Addresses">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="address" type="tns:Address" maxOccurs="unbounded">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="Address">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="address_id" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_type" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_name" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_no" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_moo" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_building" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_floor" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_soi" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_street" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_sub_district" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_district" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_province" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_region" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_post_code" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="address_country" type="xsd:string">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="TokenBase">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="serialno" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="name" type="xsd:string">
+      </xsd:element>
+      <xsd:element minOccurs="0" name="tokenstatus" type="tns:Tokenstatus">
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:simpleType name="Tokenstatus">
+    <xsd:annotation>
+      <xsd:documentation>
+          ACT - Active,AGN - Assigned,UGN - Unassigned,FRZ - Freeze,LST - Lost,DMG - Damage
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value=".{0}|ACT|AGN|UGN|FRZ|LST|DMG" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="Action">
+    <xsd:annotation>
+      <xsd:documentation>
+          I - Insert , U - Update, D - Delete
+        </xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:token">
+      <xsd:pattern value=".{0}|I|U|D" />
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DateTime">
+    <xsd:annotation>
+      <xsd:documentation> the date time has to be compliant to the pattern: dd/mm/yyyy 00:00:00 if the
+                date time field is filled</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value=".{0}|[0-9]{2}/[0-9]{2}/[0-9]{4} [012][0-9]:[0-6][0-9]:[0-6][0-9]" />
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>
