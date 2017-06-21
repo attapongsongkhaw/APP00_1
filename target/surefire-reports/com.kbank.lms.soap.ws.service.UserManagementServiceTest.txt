@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.kbank.lms.soap.ws.service.UserManagementServiceTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.236 sec - in com.kbank.lms.soap.ws.service.UserManagementServiceTest
